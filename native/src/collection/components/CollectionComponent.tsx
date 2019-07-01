@@ -1,6 +1,5 @@
 import React, {Component, ReactNode} from 'react'
 import {ListView, View, Text, StyleProp, ViewStyle} from "react-native";
-import {List, FormLabel} from "react-native-elements";
 import ZeroStatePlaceholder from "../../empty-state/ZeroStatePlaceholder";
 import Collection from "../Collection";
 
@@ -21,7 +20,7 @@ export default class CollectionComponent extends Component<Props, {}> {
     return (
       <React.Fragment>
         {this.props.title && (
-          <FormLabel>{this.props.title}</FormLabel>
+          <Text>{this.props.title}</Text>
         )}
 
         {collection.hasError() && (
